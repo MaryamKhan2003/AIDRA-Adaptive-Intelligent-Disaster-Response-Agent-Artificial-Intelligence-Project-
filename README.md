@@ -1,211 +1,346 @@
-🚑 AIDRA — Adaptive Intelligent Disaster Response Agent
-🧠 A Hybrid AI System for Smart Disaster Rescue Operations
-Artificial Intelligence Complex Computing Problem (CCP)
-Overview
+# AIDRA — Adaptive Intelligent Disaster Response Agent
+
+###  A Hybrid AI System for Smart Disaster Rescue Operations
+
+**Artificial Intelligence Complex Computing Problem (CCP)**
+
+---
+
+##  Overview
+
 AIDRA (Adaptive Intelligent Disaster Response Agent) is a Hybrid Artificial Intelligence system designed to simulate intelligent disaster rescue operations in dynamic and uncertain environments.
 
 The system combines multiple AI techniques to perform:
 
-✅ Victim Prioritization ✅ Intelligent Route Planning ✅ Resource Allocation ✅ Risk Analysis ✅ Dynamic Replanning ✅ Survival Prediction
+✅ Victim Prioritization 
+✅ Intelligent Route Planning 
+✅ Resource Allocation 
+✅ Risk Analysis 
+✅ Dynamic Replanning 
+✅ Survival Prediction
 
 AIDRA operates in a changing disaster environment where roads may become blocked, hazards may spread, and rescue resources are limited.
 
-Project Objectives
+---
+
+##  Project Objectives
+
 The system solves two major conflicting objectives:
 
-Objective 1 — Rescue Time vs Risk Exposure
-Fast routes are dangerous
-
-Safe routes are longer
+### Objective 1 — Rescue Time vs Risk Exposure
+- Fast routes are dangerous
+- Safe routes are longer
 
 The agent must decide between:
+-  Faster rescue (higher risk)
+-  Safer rescue (longer time)
 
-⏱ Faster rescue
-🔥 Safer rescue
-Decision Strategy
-Victim Severity	Decision Priority
-🔴 Critical	Prioritize Speed
-🟠 Moderate	Balanced Decision
-🟢 Minor	Prioritize Safety
-Objective 2 — Victim Priority vs Throughput
-Critical victims require immediate rescue
-Saving critical victims may delay others
+**Decision Strategy:**
+
+| Victim Severity | Decision Priority |
+|-----------------|-------------------|
+|  Critical | Prioritize Speed (TIME) |
+|  Moderate | Balanced Decision |
+|  Minor | Prioritize Safety |
+
+### Objective 2 — Victim Priority vs Throughput
+- Critical victims require immediate rescue
+- Saving critical victims may delay others
+
 The system balances:
+- ✅ Saving maximum victims
+- ✅ Prioritizing severe injuries
+- ✅ Efficient resource usage
 
-✅ Saving maximum victims ✅ Prioritizing severe injuries ✅ Efficient resource usage
+---
 
-AI Components Integrated
+##  AI Components Integrated
+
 AIDRA integrates multiple AI modules into one intelligent system.
 
-AI Component	Purpose
-🔍 Search Algorithms	Route Planning
-📦 CSP Solver	Resource Allocation
-🤖 Machine Learning	Survival Prediction
-🌫 Fuzzy Logic	Uncertainty Handling
-🔄 Dynamic Replanning	Real-Time Adaptation
-Search Algorithms Implemented
+| AI Component | Purpose |
+|--------------|---------|
+| 🔍 Search Algorithms | Route Planning |
+| 📦 CSP Solver | Resource Allocation |
+|  Machine Learning | Survival Prediction |
+| Fuzzy Logic | Uncertainty Handling |
+|  Dynamic Replanning | Real-Time Adaptation |
+
+---
+
+## Search Algorithms Implemented
+
 The system compares multiple search algorithms.
 
-Algorithms Included
-BFS (Breadth First Search)
-DFS (Depth First Search)
-Greedy Best First Search
-A* Search
-A*_Fast
-A*_Balanced
-A*_Safe
-Hill Climbing
-Best Performing Algorithm
-A* Search
+### Algorithms Included:
+- BFS (Breadth First Search)
+- DFS (Depth First Search)
+- Greedy Best First Search
+- A* Search (Fast, Balanced, Safe variants)
+- Hill Climbing
+
+### Best Performing Algorithm: **A* Search**
+
 A* performed best because it:
+- ✅ Finds optimal paths
+- ✅ Balances speed and safety
+- ✅ Uses heuristic intelligence
+- ✅ Handles risk-aware planning
 
-✅ Finds optimal paths ✅ Balances speed and safety ✅ Uses heuristic intelligence ✅ Handles risk-aware planning
-
-Formula Used
-f(n)=g(n)+h(n)
+**Formula Used:** `f(n) = g(n) + h(n)`
 
 Where:
+- `g(n)` = actual path cost (includes risk penalties)
+- `h(n)` = estimated distance to goal (Manhattan distance)
 
-g(n) = actual path cost
-h(n) = estimated distance to goal
-Constraint Satisfaction Problem (CSP)
+### Actual Performance Results:
+
+| Algorithm | Path Length | Nodes Expanded | Cost |
+|-----------|-------------|----------------|------|
+| BFS | 5 | 10 | 5 |
+| DFS | 15 | 15 | 15 |
+| Greedy | 5 | 5 | 5 |
+| A*_Fast | 5 | 5 | 4 |
+| A*_Balanced | 5 | 5 | 4 |
+| A*_Safe | 5 | 5 | 4 |
+| Hill Climbing | 5 | 4 | 5 |
+
+---
+
+##  Constraint Satisfaction Problem (CSP)
+
 The CSP module allocates victims to rescue resources while satisfying hard constraints.
 
-Available Resources
-2 Ambulances
-1 Rescue Team
-10 Medical Kits
-Constraints
-Maximum 2 victims per ambulance
-Rescue team handles only 1 victim
-Critical victims preferred for ambulances
-CSP Heuristics Used
-✅ MRV (Minimum Remaining Values) ✅ Degree Heuristic ✅ Forward Checking ✅ Backtracking
+### Available Resources:
+- 2 Ambulances
+- 1 Rescue Team
+- 10 Medical Kits
 
-Machine Learning Module
-Machine Learning predicts victim survival probability.
+### Constraints:
+- Maximum 2 victims per ambulance
+- Rescue team handles only 1 victim
+- Critical victims preferred for ambulances
 
-Models Used
-Model	Purpose
-🧮 Naive Bayes	Probability-based prediction
-👥 KNN	Similar victim analysis
-📊 ML Evaluation Metrics
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-Fuzzy Logic & Uncertainty Handling
-Disaster environments are uncertain.
+### CSP Heuristics Used:
+- ✅ MRV (Minimum Remaining Values)
+- ✅ Degree Heuristic
+- ✅ Forward Checking
+- ✅ Backtracking
 
-Fuzzy logic helps evaluate:
+### Actual Allocation Result:
+Ambulance A1: V1, V4 (2 victims)
+Ambulance A2: V2, V5 (2 victims)
+Rescue Team: V3 (1 victim)
+Backtracks: 6
 
-Fire hazards Aftershock probability Blocked roads Risk exposure
+text
 
-Risk Categories
-Score	Risk Level
-0–24	🟢 Low
-25–49	🟡 Medium
-50–74	🟠 High
-75+	🔴 Very High
-Dynamic Environment & Replanning
+---
+
+##  Machine Learning Module
+
+Machine Learning predicts victim survival probability using real medical triage data (600 samples).
+
+### Models Used:
+
+| Model | Purpose | Accuracy |
+|-------|---------|----------|
+|  Naive Bayes | Probability-based prediction | 73.3% |
+|  KNN | Similar victim analysis | 73.3% |
+
+### ML Evaluation Metrics:
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+
+### Confusion Matrix (KNN - Best Model):
+Predicted
+Survive Die
+Actual Survive 318 49
+Actual Die 36 197
+
+text
+
+---
+
+##  Fuzzy Logic & Uncertainty Handling
+
+Disaster environments are uncertain. Fuzzy logic helps evaluate:
+- Fire hazards
+- Aftershock probability
+- Blocked roads
+- Risk exposure
+
+### Risk Categories:
+
+| Score | Risk Level |
+|-------|------------|
+| 0–24 | 🟢 Low |
+| 25–49 | 🟡 Medium |
+| 50–74 | 🟠 High |
+| 75+ | 🔴 Very High |
+
+### Bayesian Blockage Prediction:
+`P(Blockage) = 0.1 + 0.3×risk_nearby + 0.4×aftershock = 80%`
+
+---
+
+##  Dynamic Environment & Replanning
+
 AIDRA supports real-time environmental changes.
 
-Dynamic Events
-✅ Roads become blocked ✅ Hazards spread ✅ Risk zones change
+### Dynamic Events:
+- ✅ Roads become blocked
+- ✅ Hazards spread
+- ✅ Risk zones change
 
-When a blockage appears:
+### Replanning Example:
 
-Agent detects obstacle
-Route becomes invalid
-A* replans automatically
-Rescue continues safely
-Environment Setup
-Grid Configuration
-Item	Position
-🏥 Base	(0,0)
-🏨 Hospital 1	(0,5)
-🏨 Hospital 2	(4,0)
-🔥 Risk Zone	(2,2)
-🚧 Blocked Road	(1,1)
-Victim Information
-Victim	Severity	Position
-V1	🔴 Critical	(0,3)
-V2	🟠 Moderate	(3,4)
-V3	🟢 Minor	(5,5)
-V4	🔴 Critical	(2,0)
-V5	🟠 Moderate	(4,2)
-Performance Metrics (KPIs)
+**Original Path to V5:**
+(0,5) → (0,4) → (0,3) → (1,3) → (2,3) → (3,3) → (3,2) → (4,2)
+
+text
+
+**Blockage at (3,2):**
+ ROAD BLOCKED! Agent detects obstacle.
+
+text
+
+**New Path After Replanning:**
+(0,5) → (0,4) → (0,3) → (1,3) → (2,3) → (3,3) → (4,3) → (4,2)
+
+text
+
+---
+
+## Environment Setup
+
+### Grid Configuration:
+
+| Item | Position |
+|------|----------|
+| 🏥 Base | (0,0) |
+| 🏨 Hospital 1 | (0,5) |
+| 🏨 Hospital 2 | (4,0) |
+| 🔥 Risk Zone | (2,2) |
+| 🚧 Blocked Road | (1,1) |
+
+### Victim Information:
+
+| Victim | Severity | Position |
+|--------|----------|----------|
+| V1 | 🔴 Critical | (0,3) |
+| V2 | 🟠 Moderate | (3,4) |
+| V3 | 🟢 Minor | (5,5) |
+| V4 | 🔴 Critical | (2,0) |
+| V5 | 🟠 Moderate | (4,2) |
+
+---
+
+## 📊 Performance Metrics (KPIs)
+
 The system evaluates performance using:
 
-✅ Victims Saved ✅ Average Rescue Time ✅ Resource Utilization ✅ Risk Exposure Score ✅ Path Optimality Ratio ✅ ML Accuracy ✅ CSP Backtracks
+| Metric | Value |
+|--------|-------|
+| Victims Saved | 5/5 (100%) |
+|  Average Rescue Time | 10.6 steps |
+|  Resource Utilization | 100% |
+|  Risk Exposure Score | 2.0 points |
+|  Path Optimality Ratio | 65.6% |
+|  ML Accuracy (KNN) | 73.3% |
+|  CSP Backtracks | 6 |
 
-GUI Features
+---
+
+## GUI Features
+
 The GUI provides a visual rescue simulation.
 
-GUI Includes
-✅ Animated Ambulance Movement ✅ Real-Time Route Display ✅ Victim Visualization ✅ Dynamic Blockage Updates ✅ Rescue Path Animation ✅ KPI Dashboard Graphs
+### GUI Includes:
+- ✅ Animated Ambulance Movement
+- ✅ Real-Time Route Display
+- ✅ Victim Visualization
+- ✅ Dynamic Blockage Updates
+- ✅ Rescue Path Animation
+- ✅ Grid Status Display
 
-Sample Console Output
-🏆 ARTIFICIAL INTELLIGENCE CCP - AIDRA SYSTEM
+---
 
-🔍 SEARCH ALGORITHM COMPARISON
-
-BFS       Path Length: 4
-DFS       Path Length: 4
-Greedy    Path Length: 4
-A*        Path Length: 4
-
-✅ Best algorithm: A*
-
- PERFORMANCE REPORT
-
-Victims Saved: 5/5
-Average Rescue Time: 4.50
-Resource Utilization: 100%
-Technologies Used
-Technology	Purpose
-🐍 Python	Core Development
-🖼 Tkinter	GUI Interface
-📊 Matplotlib	KPI Graphs
-🔢 NumPy	Numerical Processing
-Project Structure
+##  Project Structure
 AIDRA/
 │
-├── main.py
-├── environment.py
-├── search.py
-├── agent.py
-├── csp.py
-├── ml_model.py
-├── fuzzy.py
-├── triage_data.csv
-├── gui.py
-└── README.md
-How to Run
-Install Dependencies
-pip install matplotlib scikit-learn numpy
-Run the Project
-python main.py
+├── Main.py (or mn.py) # Main entry point
+├── environmnet.py # Environment setup
+├── search.py # Search algorithms (BFS, DFS, Greedy, A*)
+├── ag.py (or Agent.py) # Main agent logic
+├── csp.py # CSP solver with heuristics
+├── mlmodel.py (or Ml_model.py) # ML models (Naive Bayes, KNN)
+├── fuzzy.py (or fuzy.py) # Fuzzy logic risk evaluation
+├── gui.py (or gugu.py) # GUI visualization
+├── triage_data.csv # Medical triage dataset (600 samples)
+└── README.md # Project documentation
+
+text
+
+---
+
+##  How to Run
+
+### Prerequisites:
+- Python 3.7 or higher
+- No external libraries required (pure Python implementation)
+
+### Run the Project:
+```bash
+python Main.py
+Expected Output:
+Console shows search comparison, ML training, CSP allocation
+
+GUI window opens showing 6x6 grid
+
+Ambulances move to rescue victims
+
+Road blockage appears dynamically
+
+Final KPIs displayed
+
 Academic Information
 Field	Details
-📘 Course	Artificial Intelligence (AIC-201)
-👨‍🏫 Instructor	Dr. Arshad Farhad
-🎯 Project Type	Complex Computing Problem (CCP)
-🏫 Semester	5th Semester
-Authors
-Developed By
-Maryam Khan
-Khadeeja Hafeez
-#LinkedIn Vedio Links: https://www.linkedin.com/posts/maryam-khan-8139432ba_ai-disasterresponse-machinelearning-ugcPost-7459098645619957760--9cS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyraM8BYf96yVhTLM1dSW5YyfAyUGkMMgs
+ Course	Artificial Intelligence (AIC-201)
+ Instructor	Dr. Arshad Farhad
+ Project Type	Complex Computing Problem (CCP)
+ Semester	5th Semester
+ Authors
+Developed By:
+
+Name	Role
+Maryam Khan	Developer
+Khadeeja Hafeez	Developer
+🔗 Links
+LinkedIn Video Demonstration:
+https://www.linkedin.com/posts/maryam-khan-8139432ba_ai-disasterresponse-machinelearning-ugcPost-7459098645619957760--9cS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyraM8BYf96yVhTLM1dSW5YyfAyUGkMMgs
+
+
+
 Conclusion
 AIDRA successfully demonstrates how Hybrid Artificial Intelligence techniques can work together to solve complex disaster management problems.
 
 The system intelligently handles:
 
-✅ Route Planning ✅ Resource Allocation ✅ Risk Analysis ✅ Survival Prediction ✅ Dynamic Replanning
+ Route Planning
+
+ Resource Allocation
+
+ Risk Analysis
+
+ Survival Prediction
+
+ Dynamic Replanning
 
 By combining Search Algorithms, CSP, Machine Learning, Fuzzy Logic, and Real-Time Adaptation, AIDRA provides a strong foundation for future intelligent emergency response systems.
 
-Thank You
+ Thank You
 Intelligent Systems for Smarter Rescue Operations 🚑
