@@ -269,78 +269,43 @@ The GUI provides a visual rescue simulation.
 
 ---
 
-##  Project Structure
+Project Structure
 AIDRA/
 │
-├── Main.py (or mn.py) # Main entry point
-├── environmnet.py # Environment setup
-├── search.py # Search algorithms (BFS, DFS, Greedy, A*)
-├── ag.py (or Agent.py) # Main agent logic
-├── csp.py # CSP solver with heuristics
-├── mlmodel.py (or Ml_model.py) # ML models (Naive Bayes, KNN)
-├── fuzzy.py (or fuzy.py) # Fuzzy logic risk evaluation
-├── gui.py (or gugu.py) # GUI visualization
-├── triage_data.csv # Medical triage dataset (600 samples)
-└── README.md # Project documentation
-
-text
-
----
-
-##  How to Run
-
-### Prerequisites:
-- Python 3.7 or higher
-- No external libraries required (pure Python implementation)
-
-### Run the Project:
-```bash
-python Main.py
-Expected Output:
-Console shows search comparison, ML training, CSP allocation
-
-GUI window opens showing 6x6 grid
-
-Ambulances move to rescue victims
-
-Road blockage appears dynamically
-
-Final KPIs displayed
-
+├── main.py
+├── environment.py
+├── search.py
+├── agent.py
+├── csp.py
+├── ml_model.py
+├── fuzzy.py
+├── gui.py
+├── triange_data.csv
+└── README.md
+How to Run
+Install Dependencies
+pip install matplotlib scikit-learn numpy
+Run the Project
+python main.py
 Academic Information
 Field	Details
- Course	Artificial Intelligence (AIC-201)
- Instructor	Dr. Arshad Farhad
- Project Type	Complex Computing Problem (CCP)
- Semester	5th Semester
- Authors
-Developed By:
-
-Name	Role
-Maryam Khan	Developer
-Khadeeja Hafeez	Developer
-🔗 Links
-LinkedIn Video Demonstration:
-https://www.linkedin.com/posts/maryam-khan-8139432ba_ai-disasterresponse-machinelearning-ugcPost-7459098645619957760--9cS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyraM8BYf96yVhTLM1dSW5YyfAyUGkMMgs
-
-
-
+📘 Course	Artificial Intelligence (AIC-201)
+👨‍🏫 Instructor	Dr. Arshad Farhad
+🎯 Project Type	Complex Computing Problem (CCP)
+🏫 Semester	5th Semester
+Authors
+Developed By
+Maryam Khan
+Khadeeja Hafeez
+#LinkedIn Vedio Links: https://www.linkedin.com/posts/maryam-khan-8139432ba_ai-disasterresponse-machinelearning-ugcPost-7459098645619957760--9cS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyraM8BYf96yVhTLM1dSW5YyfAyUGkMMgs
 Conclusion
 AIDRA successfully demonstrates how Hybrid Artificial Intelligence techniques can work together to solve complex disaster management problems.
 
 The system intelligently handles:
 
- Route Planning
-
- Resource Allocation
-
- Risk Analysis
-
- Survival Prediction
-
- Dynamic Replanning
+✅ Route Planning ✅ Resource Allocation ✅ Risk Analysis ✅ Survival Prediction ✅ Dynamic Replanning
 
 By combining Search Algorithms, CSP, Machine Learning, Fuzzy Logic, and Real-Time Adaptation, AIDRA provides a strong foundation for future intelligent emergency response systems.
 
- Thank You
-Intelligent Systems for Smarter Rescue Operations 🚑
+Thank You
+Intelligent Systems for Smarter Rescue Operations
