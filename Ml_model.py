@@ -1,4 +1,4 @@
-# ml.py - Loads data from CSV file (keeps exact same output format)
+# ml.py - Loads data from CSV file 
 import math
 import csv
 import os
