@@ -269,7 +269,7 @@ The GUI provides a visual rescue simulation.
 
 ---
 
-Project Structure
+##Project Structure
 AIDRA/
 │
 ├── main.py
@@ -280,34 +280,46 @@ AIDRA/
 ├── ml_model.py
 ├── fuzzy.py
 ├── gui.py
-├── triange_data.csv
+├── triangle_data.csv
 └── README.md
 
-#How to Run
+## How to Run
 Install Dependencies
 pip install matplotlib scikit-learn numpy
 Run the Project
 python main.py
+## Academic Information
+Course: Artificial Intelligence (AIC-201)
+Instructor: Dr. Arshad Farhad
+Project Type: Complex Computing Problem (CCP)
+ Semester: 5th Semester
+ Developed By: Maryam Khan, Khadeeja Hafeez
 
-#Academic Information
-Field	Details
-📘 Course	Artificial Intelligence (AIC-201)
-👨‍🏫 Instructor	Dr. Arshad Farhad
-🎯 Project Type	Complex Computing Problem (CCP)
-🏫 Semester	5th Semester
-Authors
-Developed By
-Maryam Khan
-Khadeeja Hafeez
-#LinkedIn Vedio Links: https://www.linkedin.com/posts/maryam-khan-8139432ba_ai-disasterresponse-machinelearning-ugcPost-7459098645619957760--9cS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyraM8BYf96yVhTLM1dSW5YyfAyUGkMMgs
-Conclusion
-AIDRA successfully demonstrates how Hybrid Artificial Intelligence techniques can work together to solve complex disaster management problems.
+🔗 LinkedIn Project Video
 
-The system intelligently handles:
+https://www.linkedin.com/posts/maryam-khan-8139432ba_ai-disasterresponse-machinelearning-ugcPost-7459098645619957760--9cS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyraM8BYf96yVhTLM1dSW5YyfAyUGkMMgs
 
-✅ Route Planning ✅ Resource Allocation ✅ Risk Analysis ✅ Survival Prediction ✅ Dynamic Replanning
+##System Features
+Route Planning
+Resource Allocation
+Risk Analysis
+Survival Prediction
+Dynamic Replanning
 
-By combining Search Algorithms, CSP, Machine Learning, Fuzzy Logic, and Real-Time Adaptation, AIDRA provides a strong foundation for future intelligent emergency response systems.
+## Conclusion
 
-Thank You
+AIDRA successfully demonstrates how hybrid Artificial Intelligence techniques can work together to solve complex disaster management problems.
+
+The system integrates:
+
+Search Algorithms
+Constraint Satisfaction Problems (CSP)
+Machine Learning
+Fuzzy Logic
+Real-Time Adaptation
+
+This combination provides a strong foundation for intelligent emergency response systems.
+
+ Thank You
+
 Intelligent Systems for Smarter Rescue Operations
