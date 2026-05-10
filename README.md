@@ -282,12 +282,14 @@ AIDRA/
 ├── gui.py
 ├── triange_data.csv
 └── README.md
-How to Run
+
+#How to Run
 Install Dependencies
 pip install matplotlib scikit-learn numpy
 Run the Project
 python main.py
-Academic Information
+
+#Academic Information
 Field	Details
 📘 Course	Artificial Intelligence (AIC-201)
 👨‍🏫 Instructor	Dr. Arshad Farhad
